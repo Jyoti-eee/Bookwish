@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKWISH STORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="font-sans gradient-bg min-h-screen relative overflow-x-hidden">
+   
+
+
+    <!-- Navigation -->
+    <nav class="glass-effect sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="font-serif text-2xl font-bold text-pink-800">✨BOOKWISH</h1>
+                    <div class="sparkle ml-2" style="animation-delay: 0s;"></div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="#popular" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Popular Books</a>
+                    <a href="#blogs" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Blogs</a>
+                    <a href="#featured" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Featured Books</a>
+                    <a href="#bestselling" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Best Selling</a>
+                    <a href="#reviews" class="nav-item text-pink-700 hover:text-pink-600 px-3 py-2 rounded-md font-medium">Reviews</a>
+                </div>
+                
+                <button onclick="openSignIn()" class="hero-button text-white px-6 py-2 rounded-full font-medium shadow-lg">
+                    Sign In 
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 px-4 relative">
+        
+        <div class="max-w-6xl mx-auto text-center section-enter">
+            <h2 class="font-serif text-6xl font-bold text-pink-800 mb-6">Welcome to BOOKWISH 💖</h2>
+           
+            
+            <p class="text-xl text-pink-700 mb-8 max-w-2xl mx-auto">Where every story begins with the wish. Explore a world of books crafted to inspire,entertain,and stay with you forever.</p>
+            <button onclick="scrollToSection('popular')" class="hero-button text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl">
+                Explore Magical Books 
+            </button>
+        </div>
+    </section>
+
+    
+    <!-- Popular Books -->
+
+
+    <section id="popular" class="py-16 px-4 section-enter">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="font-serif text-4xl font-bold text-center text-pink-800 mb-12"> 💖Popular Books</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;"></div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/book-2.jpg" alt="" height="10rem;">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">The Plan</h4>
+                    
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$12.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart </button>
+                    </div>
+                </div>
+                
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 1s;"></div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/book-7.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">Where You Care</h4>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$15.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart </button>
+                    </div>
+                </div>
+
+
+                
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 1s;"></div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/book-12.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">Share Your Stuff</h4>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$15.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart </button>
+                    </div>
+                </div>
+
+    </section>
+
+
+
+
+    <!-- delivery section -->
+
+
+<section class="icons-container">
+     <div class="icons">
+      <i class="fas fa-shipping-fast"></i>
+       <div class="content">
+        <h3>free Shipping</h3>
+        <p>Order Over $10</p>
+     </div>
+     </div>
+
+
+
+     <div class="icons">
+        <i class="fas fa-lock"></i>
+       <div class="content">
+        <h3>Secure Payment</h3>
+        <p>100% Secure Payments</p>
+     </div>
+     </div>
+
+
+     <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+       <div class="content">
+        <h3>Easy Returns</h3>
+        <p>10 Days Returns</p>
+     </div>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-headset"></i>
+       <div class="content">
+        <h3>24/7 Support</h3>
+        <p>Call us Anytime</p>
+     </div>
+     </div>
+
+    
+    
+
+</section>
+
+
+
+
+
+
+
+
+
+
+     
+<!-- Best Selling Book --> 
+     <section id="bestselling" class="py-16 px-4 section-enter">
+        <div class="max-w-6xl mx-auto">
+            
+             <div class="flex flex-wrap justify-center gap-8"> 
+
+
+<div class="single">
+    <img src="images/selling.jpg" alt="">
+</div>
+
+
+<section id="bestselling" class="py-16 px-4 section-enter">
+        <div class="one-book">
+            <h3 class="font-serif text-4xl font-bold text-center text-pink-800 mb-12">Best Selling Book</h3>
+
+            <p>By Willa Blythe Baker</p>
+            <h2>The Wakefull Body</h2>
+            <span class="text-pink-700 font-bold text-lg">$20</span>
+                      <br>  <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart</button>
+            <div class="flex flex-wrap justify-center gap-8">
+      
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Blogs -->
+    
+
+    <!-- Featured Books -->
+    <section id="featured" class="py-16 px-4 section-enter">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="font-serif text-4xl font-bold text-center text-pink-800 mb-12">🌟 Featured Books</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">💖</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/secret.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">About Secret</h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$13.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🌸</button>
+                    </div>
+                </div>
+
+<div class="flex flex-wrap justify-center gap-8">
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">💖</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/summer.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">The Summer</h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$13.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🌸</button>
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 1s;">⭐</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/day.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800"> The Day</h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$16.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🚀</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+<div class="space">
+    
+</div>
+
+
+        <div class="flex flex-wrap justify-center gap-8">
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">💖</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/book-20.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">The Wonder </h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$13.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🌸</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="flex flex-wrap justify-center gap-8">
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">💖</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/paper.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">The Paper Palace</h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$13.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🌸</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="flex flex-wrap justify-center gap-8">
+                <div class="book-card glass-effect p-6 rounded-2xl shadow-xl max-w-xs relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">💖</div>
+                    <div class="text-6xl mb-4 text-center">
+                        <img src="images/make it.jpg" alt="">
+                    </div>
+                    <h4 class="font-serif text-xl font-semibold mb-2 text-pink-800">You Gonna Make It</h4>
+                   
+                    <div class="flex justify-between items-center">
+                        <span class="text-pink-700 font-bold text-lg">$13.99</span>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">Add to Cart 🌸</button>
+                    </div>
+                </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <!-- our blogs -->
+
+     <section id="blogs" class="py-16 px-4 section-enter">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="font-serif text-4xl font-bold text-center text-pink-800 mb-12">✨ Latest Blogs</h3>
+     
+            <div class="card-container">
+        <div class="card">
+            <img src="images/boys.jpg" alt="">
+            <div class="card-content">
+                <h5>Reading for mental health:How book can heal and Inspire you  </h5>
+                <p> In todays's remote work environment is key. </p>
+                <button class="text-pink-600 font-semibold hover:text-pink-700 transition-colors">Read More 💗 →</button>
+            </div>
+        </div>
+
+
+
+
+<div class="card">
+            <img src="images/heart.jpg" alt="">
+            <div class="card-content">
+                <h5>Finding Love In The Pages of a Book</h5>
+                <p>Stay ahead of the curve with our insightful look into the rapidly evolving ladscape of wearable technology </p>
+                <button class="text-pink-600 font-semibold hover:text-pink-700 transition-colors">Read More 💗 →</button>
+            </div>
+        </div>
+
+
+
+
+<div class="card">
+            <img src="images/girl.jpg" alt="">
+            <div class="card-content">
+                <h5>The Fascinating Realm of science Fiction</h5>
+                <p>Explore the Intersection of technology and sustainability in our latest blog post.Learn about the Innovation </p>
+                <button class="text-pink-600 font-semibold hover:text-pink-700 transition-colors">Read More 💗 →</button>
+            </div>
+        </div>
+
+
+     </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 px-4 section-enter">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="font-serif text-4xl font-bold text-center text-pink-800 mb-12">💕 What Our Readers Say</h3>
+            <div class="flex flex-col space-y-6 max-w-4xl mx-auto">
+                <div class="review-card p-6 rounded-2xl shadow-xl relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 0s;">✨</div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">👩‍💼</div>
+                        <div>
+                            <div class="flex mb-2">
+                                <span class="text-pink-400">💖💖💖💖💖</span>
+                            </div>
+                            <p class="text-pink-700 mb-2">"BOOKWISH is absolutely magical! It has revived my passion with its excellent choices and affordable pricing"</p>
+                            <p class="text-pink-500 font-medium">- Sarah Johnson ✨</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card p-6 rounded-2xl shadow-xl relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 1s;">💫</div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">👨‍🎨</div>
+                        <div>
+                            <div class="flex mb-2">
+                                <span class="text-pink-400">💖💖💖💖💖</span>
+                            </div>
+                            <p class="text-pink-700 mb-2">"The most beautiful bookstore I've ever seen! Fast delivery and the books arrive like little gifts. Perfect!"</p>
+                            <p class="text-pink-500 font-medium">- Michael Chen 🎨</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card p-6 rounded-2xl shadow-xl relative">
+                    <div class="sparkle absolute top-2 right-2" style="animation-delay: 2s;">💕</div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">👩‍🎓</div>
+                        <div>
+                            <div class="flex mb-2">
+                                <span class="text-pink-400">💖💖💖💖💖</span>
+                            </div>
+                            <p class="text-pink-700 mb-2">"The blog section is incredible! So many dreamy reading tips and the aesthetic is everything I've ever wanted!"</p>
+                            <p class="text-pink-500 font-medium">- Emma Davis 🌸</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- qoute section -->
+
+    <section class="lines">
+        <div class="quotes">
+            <h1>Quote of the day</h1>
+            <h3>''''The more that you read, the more things you will know. <br> The more that you learn, the more places you’ll <br>
+                 go.'''</h3>
+                 <p>Dr. Seuss</p>
+
+        </div>
+    </section>
+
+
+    
+
+
+           
+
+          
+
+
+<!-- footer section -->
+    
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:bookwish@gmail.com</p>
+                <p>91+8422492278</p>
+                <p>Address:India</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025 ✨BOOKWISH . All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Sign In Modal -->
+
+
+    <div id="signInModal" class="fixed inset-0 bg-pink-900 bg-opacity-50 flex items-center justify-center z-50 hidden backdrop-blur-sm">
+        <div class="modal glass-effect rounded-2xl p-8 max-w-md w-full mx-4 relative">
+            <div class="sparkle absolute top-4 left-4" style="animation-delay: 0s;">✨</div>
+            <div class="sparkle absolute bottom-4 right-4" style="animation-delay: 1s;">💖</div>
+            
+            <div class="text-center mb-6">
+                <h3 class="font-serif text-3xl font-bold text-pink-800 mb-2">Welcome Back! 💕</h3>
+                <p class="text-pink-600">Sign in to your magical BOOKWISH account</p>
+            </div>
+            
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-pink-700 font-medium mb-2">Email ✨</label>
+                    <input type="email" class="w-full px-4 py-3 border-2 border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent bg-white bg-opacity-80" placeholder="your@email.com">
+                </div>
+                
+                <div>
+                    <label class="block text-pink-700 font-medium mb-2">Password 🔒</label>
+                    <input type="password" class="w-full px-4 py-3 border-2 border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent bg-white bg-opacity-80" placeholder="••••••••">
+                </div>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-pink-600 text-white py-3 rounded-xl font-semibold hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Sign In 💖
+                </button>
+            </form>
+            
+            <div class="text-center mt-6">
+                <p class="text-pink-600">Don't have an account? <a href="#" class="text-pink-700 font-semibold hover:text-pink-800 transition-colors">Sign up ✨</a></p>
+            </div>
+            
+            <button onclick="closeSignIn()" class="absolute top-4 right-4 text-pink-400 hover:text-pink-600 text-3xl transition-colors">×</button>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
